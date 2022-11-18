@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.screens.FirstScreen"
+    android:background="@color/black_primary">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/background_color_onboarding"
+        >
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BELANJA"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing="0.3"
+            android:textSize="22dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/black_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_slider"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/image_slider_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_brand"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mudah"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black_primary"
+            app:layout_constraintTop_toBottomOf="@id/img_slider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="50dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet et nisl a cursus. Etiam tempor, erat consequat aliquet hendrerit"
+            android:fontFamily="@font/poppins"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dots_circle"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dots_circle"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dots_circle"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dots_large"
+                android:layout_marginHorizontal="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        android:text="Masuk"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="90dp"
+        android:letterSpacing="0.1"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/orange"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

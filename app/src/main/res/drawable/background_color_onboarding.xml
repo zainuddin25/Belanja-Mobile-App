@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/white_bone"/>
+<!--    <corners android:bottomRightRadius="70dp"-->
+<!--        android:topLeftRadius="40dp"-->
+<!--        android:topRightRadius="40dp"-->
+<!--        android:bottomLeftRadius="70dp"/>-->
+
+</shape>
