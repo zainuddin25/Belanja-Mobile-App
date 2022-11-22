@@ -1,4 +1,4 @@
-package com.example.belanja
+package com.example.belanja.listcategory
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.belanja.R
 
 class MyAdapter(private val listCategory: ArrayList<ListItem>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 

@@ -17,7 +17,7 @@ class SplashFragment : Fragment() {
         // Inflate the layout for this fragment
         Handler().postDelayed({
             if (onBoardingFinished()) {
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_homeActivity)
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }
