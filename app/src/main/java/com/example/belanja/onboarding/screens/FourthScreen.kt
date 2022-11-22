@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.belanja.HomeActivity
+import com.example.belanja.LoginActivity
 import com.example.belanja.R
 import kotlinx.android.synthetic.main.fragment_fourth_screen.view.*
 
@@ -21,7 +21,7 @@ class FourthScreen : Fragment() {
         val view = inflater.inflate(R.layout.fragment_fourth_screen, container, false)
 
         view.finishButton.setOnClickListener{
-            val intent = Intent(context, HomeActivity::class.java)
+            val intent = Intent(context, LoginActivity::class.java)
             startActivity(intent)
             onBoardingFinished()
         }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgIlustration"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/ilustration"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/imgIlustration"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black_primary"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <EditText
+        android:id="@+id/ev_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_loginText"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Username"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_input"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        android:textSize="16dp"
+        android:textColorHint="@color/black_primary"
+        />
+
+    <EditText
+        android:id="@+id/ev_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ev_username"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_input"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        android:textSize="16dp"
+        android:textColorHint="@color/black_primary"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ev_password"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="16dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16dp"
+        android:backgroundTint="@color/black_primary"
+        />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:text="OR"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black_primary"/>
+
+    <LinearLayout
+        android:id="@+id/optionLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_or"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_facebook"
+            android:layout_marginHorizontal="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_google"
+            android:layout_marginHorizontal="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Don't Have Account ?"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black_primary"
+        android:layout_below="@id/optionLogin"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        />
+
+</RelativeLayout>
